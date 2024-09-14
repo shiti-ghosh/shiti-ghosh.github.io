@@ -2,24 +2,46 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/font-awesome.css" | relative_url }}">
+  <link rel="icon" href="{{ "/assets/favicon.ico" | relative_url }}" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <a href="{{ "/" | relative_url }}">Home</a>
-      <!-- Add more navigation links here -->
-    </nav>
+    <div class="container">
+      <h1>{{ site.title }}</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ "/" | relative_url }}">Home</a></li>
+          <li><a href="{{ "/about" | relative_url }}">About</a></li>
+          <li><a href="{{ "/projects" | relative_url }}">Projects</a></li>
+          <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    {{ content }}
+    <div class="container">
+      {{ content }}
+    </div>
   </main>
 
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      <ul>
+        <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
   </footer>
+
 </body>
 </html>
+
