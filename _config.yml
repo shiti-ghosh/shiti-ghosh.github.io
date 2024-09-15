@@ -1,7 +1,14 @@
-theme: minima
+title: My Bioinformatics Portfolio
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A portfolio site to showcase my bioinformatics projects and experience.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourusername.github.io" # the base hostname & protocol for your site
+
+# Build settings
 markdown: kramdown
-sass:
-  style: compressed
-assets:
-  sources:
-    - assets/css
+theme: minima
+
+plugins:
+  - jekyll-feed
+
