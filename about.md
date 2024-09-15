@@ -1,9 +1,9 @@
 ---
-layout: portfolio
-title: About
+layout: page
+title: About Me
+permalink: /about/
 ---
 
-## About Me
+# About Me
 
-I am currently pursuing my graduate studies in bioinformatics. My research focuses on [briefly describe your research focus]. I have experience in [mention some technologies, tools, or methodologies you use].
-
+With over six years of coursework and a solid foundation in wet lab techniques, my journey in bioinformatics has been shaped by a deep curiosity for understanding life at its molecular level.
