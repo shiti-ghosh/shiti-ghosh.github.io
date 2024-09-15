@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div style="text-align: center; margin: 0 auto;">
-  <img src="path/to/your/image.jpg" alt="Descriptive Alt Text" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
+  <img src="assets/image/Untitled design-3.jpg" alt="Descriptive Alt Text" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
 </div>
 
 <h1 style="text-align: center;">About Me</h1>
