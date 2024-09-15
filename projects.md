@@ -1,15 +1,13 @@
 ---
-layout: portfolio
+layout: page
 title: Projects
+permalink: /projects/
 ---
 
-## My Projects
+# Projects
 
-### Project One
+### Project 1: RNA-Seq Data Analysis
+A detailed RNA-Seq pipeline built for analyzing high-throughput sequencing data to identify differential gene expression.
 
-A brief description of Project One. This project involved [describe briefly what you did, technologies used, and the outcome].
-
-### Project Two
-
-A brief description of Project Two. This project focused on [describe briefly what you did, technologies used, and the outcome].
-
+### Project 2: Genomic Data Visualization
+An interactive web tool for visualizing genomic data using Python and D3.js.
