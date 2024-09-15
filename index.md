@@ -2,6 +2,55 @@
 layout: default
 ---
 
-# Welcome to My Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiti Ghosh's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Shiti Ghosh</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-This is a simple Jekyll site.
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio website. I am a bioinformatics graduate with expertise in genomics and data analysis.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of my notable projects:</p>
+            <!-- Add project details here -->
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>You can view or download my resume <a href="resume.pdf" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me through <a href="mailto:shiti@example.com">email</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shiti Ghosh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
