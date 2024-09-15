@@ -3,7 +3,7 @@ email: your-email@example.com
 description: >
   A bioinformatics graduate student showcasing projects, skills, and experience.
 
-baseurl: "" # If using GitHub Pages, this should be set to your repository name
-url: "http://yourdomain.com" # Your domain name or GitHub Pages URL
+baseurl: "shiti-ghosh.github.io" # If using GitHub Pages, this should be set to your repository name
+url: "http://shiti-ghosh.github.io" # Your domain name or GitHub Pages URL
 
 theme: minima
