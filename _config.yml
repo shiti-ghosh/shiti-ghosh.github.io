@@ -1,8 +1,7 @@
-# Site settings
+theme: minima
+markdown: kramdown
 sass:
   style: compressed
 assets:
   sources:
-    - _sass
     - assets/css
-
