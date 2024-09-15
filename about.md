@@ -1,9 +1,13 @@
-<div style="display: flex; align-items: center;">
-  <div style="flex: 0 0 auto; margin-right: 15px;">
-    <img src="path/to/your/image.jpg" alt="Descriptive Alt Text" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
-  </div>
-  <div style="flex: 1;">
-    <h2>Your Name</h2>
-    <p>Your text goes here. You can write about yourself, your background, and any other information you want to include.</p>
-  </div>
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
+<div style="text-align: center; margin: 0 auto;">
+  <img src="path/to/your/image.jpg" alt="Descriptive Alt Text" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
 </div>
+
+<h1 style="text-align: center;">About Me</h1>
+
+<p style="text-align: center;">With over six years of coursework and a solid foundation in wet lab techniques, my journey in bioinformatics has been shaped by a deep curiosity for understanding life at its molecular level.</p>
