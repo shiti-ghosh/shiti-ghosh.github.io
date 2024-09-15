@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+  <script src="{{ "/assets/js/scripts.js" | relative_url }}" defer></script>
+  <link rel="icon" href="{{ "/assets/images/favicon.ico" | relative_url }}" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>{{ header }}</h1>
-    </header>
+  <header>
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Welcome to My Bioinformatics Portfolio</h1>
+        <p>Graduate Student in Bioinformatics</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ "/" | absolute_url }}">Home</a></li>
+        <li><a href="{{ "/about" | absolute_url }}">About</a></li>
+        <li><a href="{{ "/projects" | absolute_url }}">Projects</a></li>
+        <li><a href="{{ "/contact" | absolute_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        {{ content }}
-    </main>
+  <main>
+    {{ content }}
+  </main>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </foo
+  <footer>
+    <p>&copy; 2024 My Bioinformatics Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
