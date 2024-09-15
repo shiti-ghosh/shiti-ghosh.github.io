@@ -6,101 +6,107 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: #f4f7f6;
 }
 
 /* Header Styles */
 header {
-    background: #333; /* Dark background for header */
+    background-color: #1e90ff; /* Light blue background */
     color: #fff;
+    padding: 20px;
     text-align: center;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .banner {
-    background: url('banner.jpg') no-repeat center center/cover; /* Background image */
-    padding: 50px 20px;
-    color: #fff;
+    background: #1e90ff;
+    padding: 20px 0;
 }
 
 .banner h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Navigation Styles */
 nav {
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    background: #0056b3; /* Darker blue background for nav */
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00aaff; /* Light blue color on hover */
+    color: #f4f7f6; /* Light color on hover */
 }
 
 /* Main Content Styles */
 main {
-    padding: 80px 20px; /* Padding to ensure content isn't hidden by fixed header */
+    padding: 80px 20px 20px; /* Add padding to avoid overlap with fixed header */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 section {
-    margin-bottom: 40px;
     background: #fff;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 section h2 {
     font-size: 2em;
-    border-bottom: 3px solid #00aaff;
+    border-bottom: 2px solid #1e90ff;
     padding-bottom: 10px;
     margin-bottom: 20px;
     color: #333;
 }
 
+.project {
+    background: #f4f7f6;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
 /* Footer Styles */
 footer {
-    background: #333;
+    background: #1e90ff;
     color: #fff;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px;
     position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .banner h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     nav ul {
