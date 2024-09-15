@@ -1,44 +1,8 @@
-# Welcome to My Portfolio
+---
+layout: portfolio
+title: Home
+---
 
-<nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+## Welcome to My Portfolio
 
-## About Me
-
-<p>Hello! I'm a passionate developer with experience in various technologies. I love building web applications and exploring new technologies.</p>
-
-## Projects
-
-<div class="project">
-    <h3>Project One</h3>
-    <p>A brief description of the project goes here. This is where you can showcase your work and explain what you've done.</p>
-</div>
-
-<div class="project">
-    <h3>Project Two</h3>
-    <p>A brief description of the project goes here. Highlight the technologies used and the outcomes achieved.</p>
-</div>
-
-## Contact Me
-
-<form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-    
-    <button type="submit">Send</button>
-</form>
-
-<footer>
-    <p>&copy; 2024 My Portfolio</p>
-</footer>
+With over six years of coursework and a solid foundation in wet lab techniques, my journey in biotechnology has been shaped by a deep-seated curiosity for understanding life at its molecular level. My inquisitiveness to find patterns within the vast realm of biological data has inspired me to walk the path of bioinformatics. My aspiration is to leverage high-throughput data techniques to derive actionable insights that propel scientific discovery and therapeutic innovation. 
