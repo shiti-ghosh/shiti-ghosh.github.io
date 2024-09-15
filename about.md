@@ -10,4 +10,4 @@ permalink: /about/
 
 <h1 style="text-align: center;">About Me</h1>
 
-<p style="text-align: center;">With over six years of coursework and a solid foundation in wet lab techniques, my journey in bioinformatics has been shaped by a deep curiosity for understanding life at its molecular level.</p>
+<p style="text-align: center;">With over six year of coursework and a solid foundation in wet lab techniques, my journey in bioinformatics has been shaped by a deep curiosity for understanding life at its molecular level.</p>
