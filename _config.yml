@@ -1,9 +1,8 @@
-title: My Bioinformatics Portfolio
-email: your-email@example.com
-description: >
-  A bioinformatics graduate student showcasing projects, skills, and experience.
+# Site settings
+sass:
+  style: compressed
+assets:
+  sources:
+    - _sass
+    - assets/css
 
-baseurl: "shiti-ghosh.github.io" # If using GitHub Pages, this should be set to your repository name
-url: "http://shiti-ghosh.github.io" # Your domain name or GitHub Pages URL
-
-theme: minima
