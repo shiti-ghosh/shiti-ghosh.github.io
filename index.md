@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,24 +23,32 @@ layout: default
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio website. I am a bioinformatics graduate with expertise in genomics and data analysis.</p>
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio website. I am a bioinformatics graduate with expertise in genomics and data analysis. I am passionate about using data-driven approaches to solve complex biological problems.</p>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of my notable projects:</p>
-            <!-- Add project details here -->
+            <div class="content">
+                <h2>Projects</h2>
+                <p>Here are some of my notable projects:</p>
+                <!-- Add project details here -->
+            </div>
         </section>
 
         <section id="resume">
-            <h2>Resume</h2>
-            <p>You can view or download my resume <a href="resume.pdf" target="_blank">here</a>.</p>
+            <div class="content">
+                <h2>Resume</h2>
+                <p>You can view or download my resume <a href="resume.pdf" target="_blank">here</a>.</p>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me through <a href="mailto:shiti@example.com">email</a>.</p>
+            <div class="content">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me through <a href="mailto:shiti@example.com">email</a>.</p>
+            </div>
         </section>
     </main>
 
@@ -53,4 +57,3 @@ layout: default
     </footer>
 </body>
 </html>
-
