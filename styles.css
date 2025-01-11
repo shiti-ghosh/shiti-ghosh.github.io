@@ -1,0 +1,566 @@
+√
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* Body and Global Styling */
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to body */
+}
+
+/* Header Navigation */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to body */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat to body */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.1);
+}
+
+/* Landing Section with Background Image and Black Overlay */
+.landing {
+    position: relative;
+    background: url('https://cdn.pixabay.com/photo/2021/08/02/16/21/dna-6517209_1280.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+    z-index: 1;
+}
+
+.landing .intro {
+    position: relative;
+    z-index: 2;
+}
+
+.landing h1 {
+    font-size: 3rem; /* Original font size */
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/* Style for the button group */
+.button-group {
+    display: flex;
+    gap: 50px; /* Increased gap between buttons */
+    justify-content: center; /* Center align buttons horizontally */
+    margin-top: 40px;
+}
+
+/* Button styles */
+.landing .button {
+    display: inline-block;
+    padding: 12px 24px; /* Adjusted padding for better size */
+    color: #fff; /* Text color */
+    background: transparent; /* Transparent background */
+    text-decoration: none;
+    border-radius: 25px; /* Fully rounded corners */
+    border: 2px solid #fff; /* White border */
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect */
+.landing .button:hover {
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 2px solid #fff; /* Ensure border stays consistent */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center align icons */
+    gap: 20px; /* Horizontal gap between icons */
+    margin-top: 50px; /* Gap below the buttons */
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px; /* Icon size */
+    height: 40px;
+    transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.social-icons a img {
+    width: 100%; /* Make the image fit the container */
+    background: #fff;
+    height: 100%;
+    object-fit: cover; /* Ensure proper scaling */
+    border-radius: 50%; /* Rounded icon appearance */
+    border: 2px solid #fff; /* White border for each icon */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slight zoom-in effect on hover */
+   
+}
+
+/* Skills Section Styling */
+.skills {
+    padding: 50px 2%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    display: inline-block; /* Prevents the underline from spanning full width */
+    border-bottom: 3px solid #000; /* 3px solid underline */
+    padding-bottom: 3px;
+}
+
+/* Cards Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 5px;
+    justify-items: center;
+}
+
+/* Skill Cards Styling */
+.skill-card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.skill-card:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter transparency on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.card-icon {
+    margin: 15px auto;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.skill-card ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.skill-card ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.skill-card ul li strong {
+    color: #222;
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 992px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
+/* Experience Section Styling */
+.experience-section {
+    background-color: #FBFFFF  ; /* same background */
+    color: #333; /* grey text */
+    padding: 50px 5%;
+    text-align: left;
+    
+}
+
+.experience-section h2 {
+    font-size: 2.5rem;
+    margin: 0 auto 30px; /* Centers the h2 */
+    display: block; /* Restricts underline to text width */
+    border-bottom: 3px solid #000; /* Adds underline */
+    padding-bottom: 3px; /* Space between text and underline */
+    text-align: center; /* Aligns the text inside the h2, optional */
+    width: fit-content;
+    
+}
+
+/* Job Entry Styling */
+.job-entry {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.company-logo {
+    width: 80px; /* Adjust logo width */
+    height: 60px; /* Adjust logo height */
+    object-fit: contain; /* Ensure the logo fits within the container */
+    margin-right: 15px; /* Add spacing to the right */
+    background-color: #f1f1ee; /* White background */
+    border-radius: 8px; /* Rounded edges */
+    padding: 10px; /* Optional padding for spacing within the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+}
+
+.job-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+}
+
+.job-details p {
+    margin: 3px 0;
+    font-size: 1rem;
+    color: #9EA2A2; /* grey */
+    text-align: left;
+}
+
+.duration {
+    font-size: 0.9rem;
+    color: #9EA2A2;
+    text-align: left;
+}
+
+/* Job Description List */
+.job-description {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+    list-style: disc;
+    text-align: left;
+}
+
+.job-description li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #616262;
+    text-align: left;
+}
+/* Divider Line Styling */
+.experience-divider {
+    border: none;
+    height: 2px;
+    background-color: #999090; /*  grey */
+    margin: 20px auto;
+    width: 100%; /* Full width */
+    transition: width 0.3s ease, background-color 0.3s ease;
+    opacity: 0.5;
+}
+
+/* Hover Effect */
+.job-entry:hover .experience-divider {
+    background-color: #10046b; /* Turns blue */
+    width: 100%; /* Zooms horizontally */
+    opacity: 1; /* Fully visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .company-logo {
+        margin-bottom: 10px;
+    }
+    .experience-section {
+        padding: 30px 3%;
+    }
+}
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin: 0 auto 30px; /* Centers the h2 */
+    display: block; /* Restricts underline to text width */
+    border-bottom: 3px solid #000; /* Adds underline */
+    padding-bottom: 3px; /* Space between text and underline */
+    text-align: center; /* Aligns the text inside the h2, optional */
+    width: fit-content;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.project-card .project-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.project-card .project-type {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Apply lighter gradient backgrounds based on the card position */
+.project-card:nth-child(1) {
+    background: linear-gradient(135deg, #ffeca6, #faebbc);  /* Light Yellow */
+}
+
+.project-card:nth-child(2) {
+    background: linear-gradient(135deg, #a8e0f7, #d4f2ff);  /* Light Blue */
+}
+
+.project-card:nth-child(3) {
+    background: linear-gradient(135deg, #c5fcda, #defae9);  /* Light Green */
+}
+
+/* Ensure the link doesn't disrupt the card layout */
+.project-card a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Keep the same color as the card text */
+    display: block; /* Make the entire card clickable */
+    height: 100%;
+}
+
+/* Ensure no underlining within the text elements */
+.project-card a h3,
+.project-card a p {
+    text-decoration: none; /* Make sure heading and paragraph are not underlined */
+}
+
+
+/* More Projects Button */
+.more-projects-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.more-projects-button:hover {
+    background: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+/* Education Section Styling */
+.education-section {
+    background-color: #FBFFFF; /*  background */
+    color: #333; /* grey text */
+    padding: 50px 5%;
+    text-align: left;
+}
+
+.education-section h2 {
+    font-size: 2.5rem;
+    margin: 0 auto 30px; /* Centers the h2 */
+    display: block; /* Allows the margin auto to work */
+    text-align: center; /* Align text within h2 */
+    border-bottom: 3px solid #000; /* Adds underline */
+    padding-bottom: 3px; /* Space between text and underline */
+    width: fit-content; /* Shrinks to the size of the text */
+}
+
+/* Education Entry Styling */
+.education-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FBFFFF; 
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.education-entry:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.education-entry h3 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+    color: #000; /* Black font */
+}
+
+.education-entry p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #616262; /* Light grey for text */
+}
+
+.education-entry .degree, 
+.education-entry .duration {
+    font-weight: bold;
+    color: #616262;
+}
+.education-logo {
+    width: 80px; /* Adjust the diameter of the circle */
+    height: 80px; /* Equal to width for a perfect circle */
+    object-fit: contain; /* Ensure the logo fits within the circle */
+    margin-right: 15px; /* Add spacing to the right */
+    background-color: #f1f1ee; /* White background */
+    border-radius: 50%; /* Makes the logo circular */
+    padding: 10px; /* Optional padding inside the circle */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+}
+/* Divider Styling */
+.education-divider {
+    border: none;
+    height: 2px;
+    background-color: #9DA2A2; /* Grey line */
+    margin: 20px 0;
+    opacity: 0.1; /* Slightly transparent */
+}
+
+
+/* Footer Styling */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+footer .social-icons a img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
