@@ -587,7 +587,9 @@ header nav ul li a:hover {
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Space between icons */
+    justify-content: flex-start; /* Align to the left */
+    margin-top: 20px; /* Add some space from the content above */
 }
 
 .social-icons img {
