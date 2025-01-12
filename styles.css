@@ -99,7 +99,7 @@ header nav ul li a:hover {
     margin-bottom: 20px; /* Adds space below each paragraph */
     margin-top: 20px; /* Adds space above each paragraph */
     line-height: 1.5; /* Improves readability with better spacing */
-    color: #000000; /* Text color for good contrast */
+    color: #F5F5F5; /* Text color for good contrast */
 }
 
 /* Style for the button group */
