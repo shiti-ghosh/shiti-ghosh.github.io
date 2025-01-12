@@ -593,8 +593,8 @@ header nav ul li a:hover {
 }
 
 .contact-social-icons img {
-    width: 4px;
-    height: 4px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transition: transform 0.3s;
 }
