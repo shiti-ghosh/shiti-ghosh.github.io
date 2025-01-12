@@ -585,14 +585,14 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.social-icons {
+.contact-social-icons {
     display: flex;
     gap: 15px; /* Space between icons */
     justify-content: flex-start; /* Align to the left */
     margin-top: 20px; /* Add some space from the content above */
 }
 
-.contact-social-icons img {
+.social-icons img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
