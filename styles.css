@@ -95,11 +95,11 @@ header nav ul li a:hover {
 }
 
 .landing p {
-    font-size: 1.5rem; /* Sets a comfortable font size */
+    font-size: 1rem; /* Sets a comfortable font size */
     margin-bottom: 20px; /* Adds space below each paragraph */
     margin-top: 30px; /* Adds space above each paragraph */
     line-height: 1.6; /* Improves readability with better spacing */
-    color: #333; /* Text color for good contrast */
+    color: #000000; /* Text color for good contrast */
 }
 
 /* Style for the button group */
