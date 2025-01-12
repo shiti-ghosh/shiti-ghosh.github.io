@@ -81,12 +81,12 @@ header nav ul li a:hover {
 }
 
 .landing .intro {
-    max-width: 800px; /* Limits the width to prevent spreading */
+    max-width: 600px; /* Limits the width to prevent spreading */
     margin: 0 auto; /* Centers the content horizontally */
-    padding: 30px; /* Adds padding around the content */
-    text-align: center; /* Optional: centers the text */
-    position: relative;
-    z-index: 2;
+    padding: 30px; /* Adds internal spacing around the text */
+    text-align: justify; /* Aligns text neatly for readability */
+    position: relative; /* Keeps z-index functional if needed */
+    z-index: 2; /* Stacks content above any overlapping elements */
 }
 
 .landing h1 {
@@ -95,9 +95,11 @@ header nav ul li a:hover {
 }
 
 .landing p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    font-size: 1.5rem; /* Sets a comfortable font size */
+    margin-bottom: 20px; /* Adds space below each paragraph */
+    margin-top: 30px; /* Adds space above each paragraph */
+    line-height: 1.6; /* Improves readability with better spacing */
+    color: #333; /* Text color for good contrast */
 }
 
 /* Style for the button group */
