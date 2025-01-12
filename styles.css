@@ -95,7 +95,7 @@ header nav ul li a:hover {
 }
 
 .landing p {
-    font-size: 1rem; /* Sets a comfortable font size */
+    font-size: 1.2rem; /* Sets a comfortable font size */
     margin-bottom: 20px; /* Adds space below each paragraph */
     margin-top: 20px; /* Adds space above each paragraph */
     line-height: 1.5; /* Improves readability with better spacing */
