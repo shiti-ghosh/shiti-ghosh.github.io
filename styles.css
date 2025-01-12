@@ -81,6 +81,10 @@ header nav ul li a:hover {
 }
 
 .landing .intro {
+    max-width: 800px; /* Limits the width to prevent spreading */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 30px; /* Adds padding around the content */
+    text-align: center; /* Optional: centers the text */
     position: relative;
     z-index: 2;
 }
